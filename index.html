@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Photobooth</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📸Kipat Photobooth</h1>
+
+  <div id="videoContainer">
+    <video id="video" autoplay playsinline muted></video>
+    <div id="countdown"></div>
+  </div>
+
+  <div class="controls">
+    <button id="captureBtn">📷 Ambil Foto</button>
+    <button id="invertBtn">🔄 Invert Kamera</button>
+    <button id="resetBtn">🗑️ Reset</button>
+    <button id="downloadBtn" disabled>💾 Download</button>
+  </div>
+
+  <div class="frame-options">
+    <label>
+      <input type="radio" name="frame" value="vintage1" checked>
+      <span>Classic</span>
+    </label>
+    <label>
+      <input type="radio" name="frame" value="vintage2">
+      <span>Retro Dark</span>
+    </label>
+    <label>
+      <input type="radio" name="frame" value="vintage3">
+      <span>Polaroid</span>
+    </label>
+  </div>
+
+  <canvas id="canvas" width="300" height="900"></canvas>
+
+  <h2>📂 Gallery</h2>
+  <div id="gallery"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
